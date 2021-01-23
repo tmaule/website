@@ -153,7 +153,7 @@ window.onload = wrap_img;
 
 <span class="c1"># begin by populating a dataframe with MLB pitching statistics for every year on record</span>
 <span class="n">cols_to_use</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;SO&#39;</span><span class="p">,</span> <span class="s1">&#39;BF&#39;</span><span class="p">]</span>
-<span class="n">raw_stats</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/tmaule/website/tree/master/assets/raw_data/mlb_league_stats_by_season.txt&#39;</span>
+<span class="n">raw_stats</span> <span class="o">=</span> <span class="s1">&#39;C:/Users/tmaul/Documents/GitHub/website/assets/raw_data/mlb_league_stats_by_season.txt&#39;</span>
 <span class="n">k_data_by_season</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="n">raw_stats</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="n">cols_to_use</span><span class="p">)</span>
 <span class="c1"># filter out data prior to 1900 -- for roundness, plus the data from those years was fairly unstable</span>
 <span class="n">k_data_by_season</span> <span class="o">=</span> <span class="n">k_data_by_season</span><span class="p">[</span><span class="n">k_data_by_season</span><span class="o">.</span><span class="n">Year</span><span class="o">&gt;=</span><span class="mi">1900</span><span class="p">]</span>
@@ -167,6 +167,126 @@ window.onload = wrap_img;
 </div>
 </p>
     </details>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>SO</th>
+      <th>BF</th>
+      <th>K_rt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2020</td>
+      <td>8.68</td>
+      <td>37.03</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2019</td>
+      <td>8.81</td>
+      <td>38.39</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2018</td>
+      <td>8.48</td>
+      <td>38.08</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2017</td>
+      <td>8.25</td>
+      <td>38.13</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2016</td>
+      <td>8.03</td>
+      <td>38.01</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>1904</td>
+      <td>3.72</td>
+      <td>36.04</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>1903</td>
+      <td>3.58</td>
+      <td>36.64</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>1902</td>
+      <td>2.98</td>
+      <td>36.96</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>1901</td>
+      <td>3.14</td>
+      <td>37.62</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>1900</td>
+      <td>2.37</td>
+      <td>37.54</td>
+      <td>0.06</td>
+    </tr>
+  </tbody>
+</table>
+<p>121 rows × 4 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
