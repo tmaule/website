@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "&gt; - toc: false - badges: true - comments: false - categories: [sports, data science] - image: . Motivation . On 09/17/2019, Yu Darvish recorded eight consecutive strikeouts for the Chicago Cubs. The game announcers hailed this as an incredible streak, and noted that the all-time MLB record is ten consecutive strikeouts by Tom Seaver in 1970. Given that one of the most significant changes in baseball over the past several decades is the increase in strikeout rate, I was curious to find out how much more likely such an occurrence is today versus, say, 50 years ago. In the end, I find that occurence of K streaks is growing exponentially, and Seaver&#39;s feat was roughly 1,164 times less likely than Darvish&#39;s. . import pandas as pd %matplotlib inline pd.options.display.float_format = &#39;{:.2f}&#39;.format # begin by populating a dataframe with MLB pitching statistics for every year on record cols_to_use = [&#39;Year&#39;, &#39;SO&#39;, &#39;BF&#39;] raw_stats = &#39;C:/Users/tmaul/Documents/GitHub/website/assets/raw_data/mlb_league_stats_by_season.txt&#39; k_data_by_season = pd.read_table(raw_stats, sep=&#39;,&#39;, usecols=cols_to_use) # filter out data prior to 1900 -- for roundness, plus the data from those years was fairly unstable k_data_by_season = k_data_by_season[k_data_by_season.Year&gt;=1900] # calculate strikeout rate for the average pitcher k_data_by_season[&#39;K_rt&#39;] = k_data_by_season.SO/k_data_by_season.BF k_data_by_season . . Year SO BF K_rt . 0 2020 | 8.68 | 37.03 | 0.23 | . 1 2019 | 8.81 | 38.39 | 0.23 | . 2 2018 | 8.48 | 38.08 | 0.22 | . 3 2017 | 8.25 | 38.13 | 0.22 | . 4 2016 | 8.03 | 38.01 | 0.21 | . ... ... | ... | ... | ... | . 116 1904 | 3.72 | 36.04 | 0.10 | . 117 1903 | 3.58 | 36.64 | 0.10 | . 118 1902 | 2.98 | 36.96 | 0.08 | . 119 1901 | 3.14 | 37.62 | 0.08 | . 120 1900 | 2.37 | 37.54 | 0.06 | . 121 rows × 4 columns .",
-            "url": "https://tmaule.github.io/website/2021/01/22/k_streaks.html",
-            "relUrl": "/2021/01/22/k_streaks.html",
+            "title": "Analysis of consecutive strikeouts throughout MLB history",
+            "content": "Motivation . On 09/17/2019, Yu Darvish recorded eight consecutive strikeouts for the Chicago Cubs. The game announcers hailed this as an incredible streak, and noted that the all-time MLB record is ten consecutive strikeouts by Tom Seaver in 1970. Given that one of the most significant changes in baseball over the past several decades is the increase in strikeout rate, I was curious to find out how much more likely such an occurrence is today versus, say, 50 years ago. In the end, I find that occurence of K streaks is growing exponentially, and Seaver&#39;s feat was roughly 1,164 times less likely than Darvish&#39;s. . import pandas as pd %matplotlib inline pd.options.display.float_format = &#39;{:.2f}&#39;.format # begin by populating a dataframe with MLB pitching statistics for every year on record cols_to_use = [&#39;Year&#39;, &#39;SO&#39;, &#39;BF&#39;] raw_stats = &#39;C:/Users/tmaul/Documents/GitHub/website/assets/raw_data/mlb_league_stats_by_season.txt&#39; k_data_by_season = pd.read_table(raw_stats, sep=&#39;,&#39;, usecols=cols_to_use) # filter out data prior to 1900 -- for roundness, plus the data from those years was fairly unstable k_data_by_season = k_data_by_season[k_data_by_season.Year&gt;=1900] # calculate strikeout rate for the average pitcher k_data_by_season[&#39;K_rt&#39;] = k_data_by_season.SO/k_data_by_season.BF k_data_by_season . . Year SO BF K_rt . 0 2020 | 8.68 | 37.03 | 0.23 | . 1 2019 | 8.81 | 38.39 | 0.23 | . 2 2018 | 8.48 | 38.08 | 0.22 | . 3 2017 | 8.25 | 38.13 | 0.22 | . 4 2016 | 8.03 | 38.01 | 0.21 | . ... ... | ... | ... | ... | . 116 1904 | 3.72 | 36.04 | 0.10 | . 117 1903 | 3.58 | 36.64 | 0.10 | . 118 1902 | 2.98 | 36.96 | 0.08 | . 119 1901 | 3.14 | 37.62 | 0.08 | . 120 1900 | 2.37 | 37.54 | 0.06 | . 121 rows × 4 columns .",
+            "url": "https://tmaule.github.io/website/sports/data%20science/2021/01/22/k_streaks.html",
+            "relUrl": "/sports/data%20science/2021/01/22/k_streaks.html",
             "date": " • Jan 22, 2021"
         }
         
@@ -50,8 +50,8 @@
 
   
       ,"page1": {
-          "title": "About Me",
-          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "title": "About",
+          "content": "Hi, I’m Tyler. I am a quantitative trader, living in Chicago since 2015. .",
           "url": "https://tmaule.github.io/website/about/",
           "relUrl": "/about/",
           "date": ""

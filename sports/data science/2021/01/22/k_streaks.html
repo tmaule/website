@@ -4,19 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Title | Tyler Maule</title>
+<title>Analysis of consecutive strikeouts throughout MLB history | Tyler Maule</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="Analysis of consecutive strikeouts throughout MLB history" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A description for my site if turned on below" />
 <meta property="og:description" content="A description for my site if turned on below" />
-<link rel="canonical" href="https://tmaule.github.io/website/2021/01/22/k_streaks.html" />
-<meta property="og:url" content="https://tmaule.github.io/website/2021/01/22/k_streaks.html" />
+<link rel="canonical" href="https://tmaule.github.io/website/sports/data%20science/2021/01/22/k_streaks.html" />
+<meta property="og:url" content="https://tmaule.github.io/website/sports/data%20science/2021/01/22/k_streaks.html" />
 <meta property="og:site_name" content="Tyler Maule" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-22T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://tmaule.github.io/website/2021/01/22/k_streaks.html","@type":"BlogPosting","headline":"Title","dateModified":"2021-01-22T00:00:00-06:00","datePublished":"2021-01-22T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tmaule.github.io/website/2021/01/22/k_streaks.html"},"description":"A description for my site if turned on below","@context":"https://schema.org"}</script>
+{"url":"https://tmaule.github.io/website/sports/data%20science/2021/01/22/k_streaks.html","@type":"BlogPosting","headline":"Analysis of consecutive strikeouts throughout MLB history","dateModified":"2021-01-22T00:00:00-06:00","datePublished":"2021-01-22T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tmaule.github.io/website/sports/data%20science/2021/01/22/k_streaks.html"},"description":"A description for my site if turned on below","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/website/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://tmaule.github.io/website/feed.xml" title="Tyler Maule" /><link rel="shortcut icon" type="image/x-icon" href="/website/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -63,7 +63,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/website/about/">About Me</a><a class="page-link" href="/website/search/">Search</a><a class="page-link" href="/website/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/website/about/">About</a><a class="page-link" href="/website/search/">Search</a><a class="page-link" href="/website/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -71,7 +71,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-22T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Analysis of consecutive strikeouts throughout MLB history</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-22T00:00:00-06:00" itemprop="datePublished">
         Jan 22, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -81,6 +81,16 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/website/categories/#sports">sports</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/website/categories/#data science">data science</a>
+        
+      
+      </p>
     
 
     
@@ -108,29 +118,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">&gt;</span>
-
-<span class="o">-</span> <span class="n">toc</span><span class="p">:</span> <span class="n">false</span>
-<span class="o">-</span> <span class="n">badges</span><span class="p">:</span> <span class="n">true</span>
-<span class="o">-</span> <span class="n">comments</span><span class="p">:</span> <span class="n">false</span>
-<span class="o">-</span> <span class="n">categories</span><span class="p">:</span> <span class="p">[</span><span class="n">sports</span><span class="p">,</span> <span class="n">data</span> <span class="n">science</span><span class="p">]</span>
-<span class="o">-</span> <span class="n">image</span><span class="p">:</span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Motivation">Motivation<a class="anchor-link" href="#Motivation"> </a></h2><p>On 09/17/2019, Yu Darvish recorded eight consecutive strikeouts for the Chicago Cubs. The game announcers hailed this as an incredible streak, and noted that the all-time MLB record is ten consecutive strikeouts by Tom Seaver in 1970. Given that one of the most significant changes in baseball over the past several decades is the increase in strikeout rate, I was curious to find out how much more likely such an occurrence is today versus, say, 50 years ago. In the end, I find that occurence of K streaks is growing exponentially, and Seaver's feat was roughly 1,164 times less likely than Darvish's.</p>
@@ -294,7 +281,7 @@ window.onload = wrap_img;
 
 
 
-  </div><a class="u-url" href="/website/2021/01/22/k_streaks.html" hidden></a>
+  </div><a class="u-url" href="/website/sports/data%20science/2021/01/22/k_streaks.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
