@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Tyler Maule
-description: A description for my site if turned on below
+# description: A description for my site if turned on below
 github_username: tmaule
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "website"
