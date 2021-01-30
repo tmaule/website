@@ -1,1 +1,1 @@
-Sitemap: tylermaule.com/sitemap.xml
+Sitemap: https://tylermaule.com/sitemap.xml
