@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Hi, I'm Tyler. I am a quantitative trader, living in Chicago since 2015.
+Quantitative trader, living in Chicago since 2015.
 
+Interests: Travel, trying new foods, music, reading, nature. Advocate for Rationality and Effective Altruism.
+
+Contact:
 tmaule23@gmail.com
