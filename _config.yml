@@ -44,6 +44,7 @@ minima:
     twitter: tylermaule
     github: tmaule
 
+email: mail@tylermaule.com
 # Set this to true to get LaTeX math equation support
 use_math: 
 
@@ -51,7 +52,7 @@ use_math:
 show_description: false
 
 # Set this to true to display image previews on home page, if they exist
-show_image: false
+show_image: true
 
 # Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
 annotations: false
